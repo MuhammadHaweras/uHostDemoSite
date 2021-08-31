@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+#product-overview {
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("freedom.jpg"), #ff1b68;
+  background-repeat: no-repeat;
+  background-position: left 10% top 20%;
+  background-size: cover;
+  background-origin: border-box;
+  background-clip: border-box;
+  width: 100vw;
+  padding: 10px;
+  /* margin-top: 43px; */
+  /* border: 3px solid black; */
+  height: 65vh;
+  position: relative;
+}
+#product-overview h1 {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  font-size: 1.6rem;
+}
+@media (min-width: 640px) {
+  #product-overview {
+    height: 80vh;
+    background-position: top 50%;
+  }
+  #product-overview h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
+.plans {
+  background-color: #d5ffdc;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  /* display: inline-block; */
+  width: 100%;
+  /* vertical-align: middle; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.plans-recommended {
+  background-color: #19b84c;
+  color: white;
+  /* box-shadow: 2px 2px 2px 2px rgba(0,0 , 0, 0.5); */
+}
+.recommended__heading {
+  background-color: white;
+  color: #19b84c;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.plans__header {
+  color: #0e4f1f;
+}
+.plan__price {
+  color: #858585;
+}
+.plans__header-recom {
+  color: white;
+}
+.plan__price-recom {
+  color: #0e4f1f;
+}
+.plan-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.plan-list li {
+  margin: 8px 0px;
+}
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+.button {
+  background-color: #0e4f1f;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 8px;
+  border: 1px solid #0e4f1f;
+  border-radius: 8px;
+}
+.button:hover,
+.button:active {
+  background-color: white;
+  color: #0e4f1f;
+  /* border:1px solid white; */
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
+}
+
+@media (min-width: 640px) {
+  .plans__center {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .plans {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 195px;
+    max-width: 580px;
+  }
+}
+#key-features {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 1rem;
+}
+#key-features .section-title {
+  color: white;
+  margin: 2rem;
+}
+.key-features__list {
+  /* list-style: none; */
+  margin: 0;
+  padding: 0;
+}
+.key-features {
+  list-style: none;
+  /* display: inline-block; */
+  /* width: 30vw; */
+  text-align: center;
+}
+@media (min-width: 640px) {
+  .key-features {
+    display: inline-block;
+    width: 30vw;
+    text-align: center;
+  }
+}
+.key-fearures__paragraph {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  vertical-align: top;
+}
+.key-features__image {
+  background-color: lightpink;
+  width: 128px;
+  height: 128px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: auto;
+  padding: 1.25rem;
+}
+/* h1 {
+    font-family: sans-serif;
+} */
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
